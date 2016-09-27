@@ -1,10 +1,15 @@
 # nodemysqlslave
 Listing MySql Replication Slave Status 
 
-#File config.json
+## Introduction
+
+This is a node.js application that check the replication status for mysql slave.
+You can connect to the specified port (default 3615) for a list of MySQL synchronized slaves (JSON).
+
+##File config.json
 File config.json
 Example : 
-```lua
+```js
 -- File config.json
 {
     "log" : true,
@@ -30,4 +35,3 @@ Example :
     ]
 }
 ```
-```lua
