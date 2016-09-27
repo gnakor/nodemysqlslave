@@ -1,27 +1,29 @@
 # nodemysqlslave
-List MySql Replication Slave 
+Listing MySql Replication Slave Status 
 
 #File config.json
 File config.json
 Example : 
 {
-    user: 'toto',
-    password: 'toto',
-    database: '',
-    master: {
-        host: "MASTER_HOST",
-        port: 3306
+    "log" : true,
+    "onlylocalhost" : false,
+    "listenTo" : 3615,
+    "user": "slavestatus",
+    "password": "TheDevilIsWatchingYou",
+    "master": {
+        "host": "localhost",
+        "port": 3306
     },
-    slaves: [
+    "slaves": [
         {
-            host: "SLAVE1_HOST",
-            port: 3306,
-            state: 0
+            "host": "dbSlave1",
+            "port": 3306,
+            "state": 0
         },
-        {db: null,
-            host: "SLAVE1_HOST",
-            port: 3306,
-            state: 0
+        {
+            "host": "dbSlave2",
+            "port": 3306,
+            "state": 0
         }
     ]
-};
+}
