@@ -1,0 +1,13 @@
+{
+    "name": "MysqlSlavesStatus",
+    "description": "Cluster Mysql slaves status",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "mysql": ""
+    },
+    "engines": {
+        "node": "4.5.0",
+        "npm": "2.15.5"
+    }
+}
