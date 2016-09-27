@@ -4,6 +4,8 @@ Listing MySql Replication Slave Status
 #File config.json
 File config.json
 Example : 
+```lua
+-- File config.json
 {
     "log" : true,
     "onlylocalhost" : false,
@@ -27,3 +29,5 @@ Example :
         }
     ]
 }
+```
+```lua
